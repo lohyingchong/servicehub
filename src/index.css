@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-bg text-gray-900;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-sf-pro {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  }
+  
+  .font-sf-pro-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  }
+  
+  .font-sf-pro-display {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  }
+  
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-hover {
+    @apply hover:bg-white/20 hover:shadow-xl hover:shadow-primary-500/10;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-primary text-white font-semibold px-6 py-3 rounded-xl hover:shadow-xl hover:shadow-primary-500/25 transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gradient-secondary text-white font-semibold px-6 py-3 rounded-xl hover:shadow-xl hover:shadow-secondary-500/25 transition-all duration-200;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+}
